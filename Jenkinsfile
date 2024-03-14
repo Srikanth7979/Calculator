@@ -5,8 +5,8 @@ pipeline {
             steps {
                 script {
                     //get maven home path
-                    def mvnHome = tool name: 'maven-3', type: 'maven'
-                    sh "${mvnHome}/bin/mvn package"
+                    
+                    sh "mvn package"
                 }
             }
         }
@@ -15,7 +15,7 @@ pipeline {
                 script {
                     def mvnHome = tool name: 'maven', type: 'maven'
                     withSonarQubeEnv('Sonarqube') {
-                        sh "${mvnHome}/bin/mvn sonar:sonar"
+                        sh "mvn sonar:sonar"
                     }
                 }
             }
