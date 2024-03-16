@@ -9,13 +9,15 @@ pipeline {
                 script {
                     //get maven home path
                     
-                    sh "mvn clean compile"
+                    //sh "mvn clean compile"
                     //sh "mvn clean package"
+                    sh "mvn clean package -DskipTests"
+
                     //sh "mvn clean install"
                     echo "This is stage compile"
                 }
             }
-        }
+
         stage ('StaticCodeAnalysis') {
             steps {
                 script {
