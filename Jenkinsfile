@@ -18,9 +18,9 @@ pipeline {
                 script {
                     //def mvnHome = tool name: 'maven', type: 'maven'
                     //withSonarQubeEnv('Sonarqube') {
-                        //sh "mvn sonar:sonar"
+                        //sh "mvn sonar:sonar"}
                     echo "static analaysis stage"
-                    }
+                    
                 }
             }
         }
