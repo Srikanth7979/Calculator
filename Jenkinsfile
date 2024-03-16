@@ -17,6 +17,7 @@ pipeline {
                     echo "This is stage compile"
                 }
             }
+        }  
 
         stage ('StaticCodeAnalysis') {
             steps {
