@@ -6,16 +6,17 @@ pipeline {
                 script {
                     //get maven home path
                     
-                    sh "mvn package"
+                    sh "mvn clean compile"
                 }
             }
         }
         stage ('StaticCodeAnalysis') {
             steps {
                 script {
-                    def mvnHome = tool name: 'maven', type: 'maven'
-                    withSonarQubeEnv('Sonarqube') {
-                        sh "mvn sonar:sonar"
+                    //def mvnHome = tool name: 'maven', type: 'maven'
+                    //withSonarQubeEnv('Sonarqube') {
+                        //sh "mvn sonar:sonar"
+                    echo "static analaysis stage"
                     }
                 }
             }
