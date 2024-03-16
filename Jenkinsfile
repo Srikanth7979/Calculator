@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'Maven3'        //name give in managejenkins > tools > maven (section) > name: Maven3
+    }    
     stages {
         stage ('compile-package') {
             steps {
