@@ -31,9 +31,9 @@
     </dependencies>
  <distributionManagement>
     <repository>
-      <id>your-repository-id</id>
-      <name>Repository Name</name>
-      <url>http://your-repository-url</url>
+      <id>java-web-app</id>
+      <name>java-web-app</name>
+      <url>http://16.171.137.212:8082/ui/admin/repositories/local/java-web-app/</url>
     </repository>
   </distributionManagement>
 </project>
