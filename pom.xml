@@ -29,4 +29,11 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+ <distributionManagement>
+    <repository>
+      <id>your-repository-id</id>
+      <name>Repository Name</name>
+      <url>http://your-repository-url</url>
+    </repository>
+  </distributionManagement>
 </project>
